@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: larger;
+    font-weight: bold;
+    font-family: math;
+    background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+}
+.calci-container{
+    width: 30vw;
+    height: 80vh;
+    padding: 20px;
+    margin: 10vh 35vw;
+    border: 1px solid grey;
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 10px;
+    background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+}
+.display-box{
+    height: 15%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 2px 2px 5px grey;
+    border-radius: 10px;
+}
+.buttons-box{
+    height: 80%;
+}
+.buttons-box button{
+    margin:5px;
+    width: 5.6vw;
+    height: 10vh;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px grey;
+}
+.buttons-box .btn-double{
+    width: 12.5vw;
+    border-radius: 10%;
+    height: 8vh;
+}
+#temp-output{
+    color: grey;
+    opacity: 0.5;
+    display: none;
+}

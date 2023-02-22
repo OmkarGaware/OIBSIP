@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- author Tag -->
+    <meta name="author" content="Omkar Gaware">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Link Css -->
+    <link rel="stylesheet" href="style.css">
+    <title>calculator</title>
+  </head>
+  <body>
+
+    <div class="calci-container"><!-- calci-container -->
+
+        <div class="display-box bg-light"><!-- Display Box -->
+            <span id="display-box"></span><span id="temp-output"></span>
+        </div><!-- Display Box end -->
+
+        <div class="buttons-box"><!-- buttons-box -->
+            <button type="button" class="btn btn-light" value="C" onclick="clearvalue()">C</button>
+            <button type="button" class="btn btn-light" value="%"onclick="btnvalue(this),tempoutput()">%</button>
+            <button type="button" class="btn btn-light" value="*"onclick="btnvalue(this),tempoutput()">*</button>
+            <button type="button" class="btn btn-light" value="back" onclick="back()">&#x2190;</button><br>
+            <button type="button" class="btn btn-light" value="9"onclick="btnvalue(this),tempoutput()">9</button>
+            <button type="button" class="btn btn-light" value="8"onclick="btnvalue(this),tempoutput()">8</button>
+            <button type="button" class="btn btn-light" value="7"onclick="btnvalue(this),tempoutput()">7</button>
+            <button type="button" class="btn btn-light" value="/"onclick="btnvalue(this),tempoutput()">/</button><br>
+            <button type="button" class="btn btn-light" value="6"onclick="btnvalue(this),tempoutput()">6</button>
+            <button type="button" class="btn btn-light" value="5"onclick="btnvalue(this),tempoutput()">5</button>
+            <button type="button" class="btn btn-light" value="4"onclick="btnvalue(this),tempoutput()">4</button>
+            <button type="button" class="btn btn-light" value="-"onclick="btnvalue(this),tempoutput()">-</button><br>
+            <button type="button" class="btn btn-light" value="3"onclick="btnvalue(this),tempoutput()">3</button>
+            <button type="button" class="btn btn-light" value="2"onclick="btnvalue(this),tempoutput()">2</button>
+            <button type="button" class="btn btn-light" value="1"onclick="btnvalue(this),tempoutput()">1</button>
+            <button type="button" class="btn btn-light" value="+"onclick="btnvalue(this),tempoutput()">+</button><br>
+            <button type="button" class="btn btn-light" value="."onclick="btnvalue(this),tempoutput()">.</button>
+            <button type="button" class="btn btn-light" value="0"onclick="btnvalue(this),tempoutput()">0</button>
+            <button type="button" class="btn btn-light btn-double" value="=" onclick="btnvalue(this)">=</button><br>
+
+        </div><!-- buttons-box end -->
+
+    </div><!-- calci-container end -->
+    
+
+
+
+    <!-- link JS -->
+    <script src="script.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
